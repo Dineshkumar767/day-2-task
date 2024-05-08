@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 2 task Google Search Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            display: block;
+            margin: 20px auto;
+            width: 200px;
+        }
+
+        .search-bar-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .search-bar {
+            flex: 1;
+            padding: 10px;
+            border: 2px solid #1a73e8;
+            border-radius: 25px;
+            box-sizing: border-box;
+            font-size: 16px;
+            margin-right: 10px;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .search-bar:focus {
+            border-color: #4285f4;
+        }
+
+        .search-button {
+            padding: 10px 20px;
+            background-color: #1a73e8;
+            border: none;
+            border-radius: 25px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .search-button:hover {
+            background-color: #0d47a1;
+        }
+
+        .search-results {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .search-result {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 20px;
+        }
+
+        .search-result:last-child {
+            margin-bottom: 0;
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .search-result h3 {
+            margin: 0;
+            font-size: 20px;
+            color: #1a0dab;
+        }
+
+        .search-result p {
+            margin: 5px 0;
+            color: #545454;
+        }
+
+        .search-result a {
+            text-decoration: none;
+            color: #1a0dab;
+        }
+
+        .search-result a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Google logo -->
+        <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+            alt="Google Logo">
+
+        <!-- Search bar and button -->
+        <form action="https://www.google.com/">
+            <div class="search-bar-container">
+                <input type="text" class="search-bar" placeholder="Search Google">
+        </form><button class="search-button">Search</button>
+    </div>
+    </form>
+    <!-- Search results -->
+    <ul class="search-results">
+        <li class="search-result">
+            <h3><a href="#">HTML </a></h3>
+            <p>
+                HTML (Hypertext Markup Language) is the standard language used to create and design web pages. It
+                provides the structure and content of a webpage, defining elements such as headings, paragraphs,
+                links, images, and more.</p>
+        </li>
+        <li class="search-result">
+            <h3><a href="#">CSS</a></h3>
+            <p>CSS (Cascading Style Sheets) is a styling language used to control the presentation and layout of
+                HTML documents. It allows web designers to customize the appearance of HTML elements, including
+                aspects such as colors, fonts, spacing, and positioning, to create visually appealing and consistent
+                designs across web pages.</p>
+        </li>
+        <li class="search-result">
+            <h3><a href="#">javascript</a></h3>
+            <p>CSS (Cascading Style Sheets) is a styling language used to control the presentation and layout of
+                HTML documents. It allows web designers to customize the appearance of HTML elements, including
+                aspects such as colors, fonts, spacing, and positioning, to create visually appealing and consistent
+                designs across web pages.</p>
+        </li>
+    </ul>
+    </div>
+</body>
+
+</html>
